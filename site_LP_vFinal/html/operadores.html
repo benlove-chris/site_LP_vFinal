@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Lógica de programação</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet"  href="../css/site3.css">
+<link rel="icon" type="image/x-icon" href="../img/icone.png">
+  <script  src="../java/java.js"></script>
+  <link rel="stylesheet"  href="../css/calculadora2.css">
+
+</head>
+<body>
+
+
+
+<header>
+
+       <a href="index.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+</header>
+
+
+
+<nav class="navbar navbar-inverse" id="nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Lógica de programação</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="operadores.html">Operadores lógicos</a></li>
+          <li><a href="boleana.html">Lógica booleana</a></li>
+          <li><a href="repeticao.html">Laços</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<div class="container">
+
+<h1 >Operadores Aritméticos</h1>
+
+<p class="paragrafo">Operadores aritméticos são os "fundamentais", são aqueles que fazemos mais comumente como adição, subtração, divisão e multiplicação, e também alguns outros não tão utilizados. Vale lembrar que todos os operadores podem variar em cada linguagem de programação, mas estaremos usando como exemplo os da linguagem Python. Abaixo uma tabela com os operadores aritméticos em Python: </p><br><br>
+
+<table>
+  <tr>
+    <th>Operador</th>
+    <th>Sinal</th>
+  </tr>
+  <tr>
+    <td><b>Adição</b></td>
+    <td><b>+</b></td>
+  </tr>
+  <tr>
+    <td><b>Subtração</b></td>
+    <td><b>-</b></td>
+  </tr>
+  <tr>
+    <td><b>Multiplicação</b></td>
+    <td><b>*</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão</b></td>
+    <td><b>/</b></td>
+  </tr>
+  <tr>
+    <td><b>Módulo (Resto)</b></td>
+    <td><b>%</b></td>
+  </tr>
+  <tr>
+    <td><b>Exponencição</b></td>
+    <td><b>**</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão Inteira</b></td>
+    <td><b>//</b></td>
+  </tr>
+</table>
+<br><br>
+
+<p class="paragrafo">Uma das características mais importantes sobre os Operadores Aritméticos muitas vezes ignorada é que eles possuem uma ordem de execução, como mostrado abaixo: </p><br>
+
+<ol class="paragrafo">
+  <li>Operações dentro dos parênteses indo das
+mais internas para as mais externas;</li>
+  <li>**(Exponenciação);</li>
+  <li>* (Multiplicação), / (Divisão), // (Divisão Inteira), % (Módulo ou Resto);</li>
+  <li>+ (Adição), - (Subtração).</li>
+</ol>
+<br>
+<h2>Importante ressaltar que, na programação:</h2>
+<ul class="paragrafo">
+  <li>Os níveis de importância das operações são
+  representando apenas por ( ) (parênteses), ou seja
+  não usamos [ ] (colchetes) ou
+  { } (chaves);</li>
+  <li>Diferente do que estamos acostumados, em diversas linguagens de
+programação, separamos a parte inteira da parte fracionária de um
+número do tipo real com o <strong>ponto</strong> ao invés de vírgula.</li>
+</ul>
+<br><br>
+
+<h1 >Exemplos</h1>
+
+<table>
+  <tr>
+    <th>Operador</th>
+    <th>Exemplo</th>
+  </tr>
+  <tr>
+    <td><b>Adição</b></td>
+    <td><b>5 + 3 = 8</b></td>
+  </tr>
+  <tr>
+    <td><b>Subtração</b></td>
+    <td><b>4 - 2 = 2</b></td>
+  </tr>
+  <tr>
+    <td><b>Multiplicação</b></td>
+    <td><b>3 * 6 = 18</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão</b></td>
+    <td><b>8 / 2 = 4</b></td>
+  </tr>
+  <tr>
+    <td><b>Módulo ou Resto</b></td>
+    <td><b>8 % 3 = 2</b></td>
+  </tr>
+  <tr>
+    <td><b>Exponenciação</b></td>
+    <td><b>2 ** 3 = 8</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão Inteira</b></td>
+    <td><b>9 // 2 = 4</b></td>
+  </tr>
+</table>
+<br><br>
+
+  <h1 >Operadores Relacionais</h1>
+  
+
+  <p class="paragrafo">Operadores relacionais são utilizados para comparar valores, o resultado de uma expressão relacional é um valor booleano (<b>Verdadeiro</b> ou <b>Falso</b>).<br> Os operadores relacionais são: igual, diferente, maior, menor, maior ou igual e menor ou igual.</p><br><br>
+
+  <table>
+  	<tr>
+  		<th>Operador</th>
+  		<th>Sinal</th>
+  	</tr>
+  	<tr>
+  		<td><b>Igual</b></td>
+  		<td><b>==</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Diferente</b></td>
+  		<td><b>!=</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Menor</b></td>
+  		<td><b>&lt;</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Maior</b></td>
+  		<td><b>></b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Menor igual</b></td>
+  		<td><b>&lt;=</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Maior igual</b></td>
+  		<td><b>>=</b></td>
+  	</tr>
+  </table>
+<br>
+
+<p class="paragrafo"> <br><br>
+
+Os operadores relacionais são muito utilizados em programação, as decisões dos algoritmos geralmente são tomadas nas operações relacionais, ou seja, as decisões baseiam-se em testes do estado das variáveis. Então é muito importante entender o que é uma operação relacional e quais os operadores utilizados nesse tipo de expressão.<br><br>
+
+Podemos comparar uma expressão relacional a uma pergunta cuja
+veracidade estamos testando. Se a expressão relacional for verdade, ela
+resulta no valor lógico Verdadeiro. Caso contrário, ela resulta no valor
+lógico Falso.<br><br>
+
+Alguns operadores relacionais <strong>não funcionam</strong> com alguns tipos de variáveis. Se forem valores do tipo <i>string</i> (caractere)
+ou lógico só é possível usar o <b>==</b> (Igual) e <b>!=</b> (Diferente). Para os tipos
+numéricos real e inteiro podemos usar qualquer operador lógico para
+comparação.<br><br>
+
+Lembrando que as variáveis precisam ser do <strong>mesmo tipo</strong> para a
+comparação ser considerada válida, exceto inteiro com real, pois são números.</p><br><br>
+
+<h1 >Exemplos</h1>
+
+<table>
+	<tr>
+		<th>Operador</th>
+		<th>Comparação</th>
+		<th>Resultado</th>
+	</tr>
+	<tr>
+		<td><b>Igual</b></td>
+		<td><b>7 == 7</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+	<tr>
+		<td><b>Diferente</b></td>
+		<td><b>10 != 10</b></td>
+		<td><b>Falso</b></td>
+	</tr>
+	<tr>
+		<td><b>Maior</b></td>
+		<td><b>10 > 20</b></td>
+		<td><b>Falso</b></td>
+	</tr>
+	<tr>
+		<td><b>Menor</b></td>
+		<td><b>100 &lt; 1000</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+	<tr>
+		<td><b>Menor igual</b></td>
+		<td><b>125 &lt;= 250</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+	<tr>
+		<td><b>Maior igual</b></td>
+		<td><b>60 >= 60</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+</table>
+<br><br>
+</div>
+
+<button onclick="topFunction()" id="button" title="Volta ao topo">Topo</button>
+
+<script>
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("button").style.display = "block";
+  } else {
+    document.getElementById("button").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+ <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <address>
+            Desenvolvido por: <a class="mailto" href="mailto:anelusbenlove@gmail.com">Benlove Anelus, </a> <a class="mailto" href="mailto:Lailarafasch@gmail.com">Gabriel João Rosa, </a>
+          <a class="mailto" href="mailto:darkninsa@gmail.com">Paulo Ismél, </a> <a class="mailto" href="mailto:guaitanelematheus@gmail.com">Matheus Guaitanele, </a>
+            <a class="mailto" href="mailto:cardosolucasaugust@gmail.com">Lucas Cardoso.</a> <br>
+           <a href="http://blumenau.ifc.edu.br"> IFC campus Blumenau</a><br>
+          <small>  &copy; 2019 101 Info. Todos os direitos reservados.</small>
+    </address>
+     </div>   
+  </footer>
+
+  
+
+
+</body>
+</html>

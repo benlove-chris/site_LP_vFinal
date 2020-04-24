@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formulário</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="../img/icone.png">
+	<style > 
+
+body
+{
+    background-image: url(../img/logo2.jpg);
+    background-size: 100% 100%;
+    color: black;
+}
+@media only screen and (max-width: 1000px) {
+      body{
+          background-image: url(../img/ds.jpg);
+      }
+    }
+h1
+{
+   text-transform:uppercase;
+    font: bold 20px/45px Helvetica, Verdana, sans-serif;
+    text-align: center;
+}
+label 
+{
+    display: block;
+}
+h2 
+{
+    font: bold 14px Helvetica, Verdana, sans-serif;
+    background-color: #003366;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0px auto;
+}
+div 
+{
+    background-color: white;
+    opacity: 0.9;
+    width: 300px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+span{
+  color: red;
+}
+</style>
+</head>
+<body>
+<br>
+<div class="container" style="max-width: 650px; min-width: 400px;">
+  <div class="card">
+    <h2 class="card-header text-center">Cadastre-se aqui</h2>
+    <div class="card-body">
+      <form action="enviado.html">
+        <div class="form-group">
+          <h3>Dados do cadastro</h3> 
+          <label><span>*</span>Nome: </label>
+          <input type="text" class="form-control"  placeholder="Digite seu nome" required="">
+          <label><span>*</span>Email:</label>
+          <input type="email" class="form-control"  placeholder="seuemail@exemplo.com" required="">
+          <label><span>*</span>Senha: </label>
+          <input type="password" class="form-control"  placeholder="Senha" required="">
+        </div>
+
+        <div class="form-group">
+          <h3>Dados pessoais</h3>
+          <label>Sexo:</label>
+          <input type="radio" id="sexo1" name="sexo"> Masculino
+          <input type="radio" id="sexo2" name="sexo"> Femenino
+          <br>
+          <br>
+          <label>Estado civil:</label>      
+            <select class="form-control">
+              <option>Solteiro(a)</option>
+              <option >Casado(a)</option>
+              <option >Divorciado(a)</option>
+              <option >Namorando</option>
+              <option >Noivo(a)</option>
+            </select>
+          </div>
+                <div class="form-group">
+            <h3>Dicas para melhorar</h3>
+			<textarea class="form-control" name="area_text" rows="10" cols="40" placeholder="Comente aqui"></textarea>
+      <br>
+          <input type="checkbox" required=""> Aceito os termos de contrato.          
+        </div>
+        <input type="submit" class="btn btn-success"  value="Enviar">
+        <input type="reset" class="btn btn-danger"  value="Limpar">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

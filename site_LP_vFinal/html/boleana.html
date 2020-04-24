@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Lógica de programação</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet"  href="../css/site3.css">
+
+<link rel="icon" type="image/x-icon" href="../img/icone.png">
+  <script  src="../java/java.js"></script>
+  <link rel="stylesheet"  href="../css/calculadora2.css">
+
+</head>
+<body>
+
+
+
+<header>
+
+       <a href="index.html"><img src="../img/logo.png" alt="logo" id="logo"></a>
+</header>
+
+
+
+<nav class="navbar navbar-inverse" id="nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Lógica de programação</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a href="index.html">Home</a></li>
+          <li><a href="operadores.html">Operadores lógicos</a></li>
+          <li class="active"><a href="boleana.html">Lógica booleana</a></li>
+          <li><a href="repeticao.html">Laços</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+  
+  <h1 id="titulo">Lógica Booleana</h1>
+
+
+  <!-- Biografia de George-->
+  
+
+
+<p class="paragrafo"> Lógica Boolena é uma sentença declarativa que podemos ter uma resposta verdadeira ou falso. É chamada de lógica "booleana" justamente, uma homenagem a George Boole, um inventor de lógica matemática.
+Quando George Boole passou a estudar as operações matemáticas de forma diferente, separando todos os símbolos das coisas sobre as quais eles operavam, com o intuito de criar um sistema simples e totalmente simbólico. Surge assim a lógica matemática.<br> Mas, como a Lógica de Boole (ou lógica booleana) utiliza um sistema numérico binário, na época de sua descoberta não foi utilizada. Com o surgimento do computador, a utilização do sistema binário tornou-se indispensável e, obviamente, a lógica de Boole passou a ter aplicação prática.<br><br>
+Os computadores de uma forma geral, e qualquer outra máquina controlada por um processador, trabalham com sistema binário, composto apenas pelos números um e zero. E foram estes dois números que deram origem à lógica booleana.
+Assim como bem e mal, claro e escuro, fácil e difícil, certo e errado são opostos, com 0 e 1 não é diferente.
+Na lógica Booleana, o zero representa falso, enquanto o um representa verdadeiro. Para trabalhar com esses valores e torná-los algo lógico, que possa ser aplicado, são necessárias as chamadas <b>PORTAS LÓGICAS!</b></p><br>
+
+
+    <h2>O que são portas Lógicas?</h2>
+    <p class="paragrafo">Uma porta lógica é como uma sala que possuí entradas e saidas. Assim, os bits entram, são processados de acordo com a função da sala, e saem da sala em forma de resultado. </p>
+    <h3>NOT</h3>
+    <p class="paragrafo">A porta lógica NOT é como multiplica um número por menos um, o número que era positivo passa a ser negativo, e o que era negativo passa a ser positivo, é conhecida como inversor por, literalmente, inverte o bit de entrada. Se o bit de entrada for um, por exemplo, o bit de saída será zero, e vice-versa.</p>
+    <h3>AND</h3>
+    <p class="paragrafo">And, traduzindo para o português, significa E. Assim como no português o E é usado para a junção de idéias, na lógica booleana é aplicado da mesma maneira.
+    Essa porta lógica possui dois bits de entrada e um de saída. Para que o bit de saída seja verdadeiro (valor 1) ambos os bits de entrada devem ser verdadeiros.</p><br>
+    <h3>OR</h3>
+    <p class="paragrafo">Or, significa OU e, assim como no português o “ou” tem a função de indicar escolha, na lógica booleana é quase a mesma coisa. Da mesma maneira que a porta AND, a porta OR possui dois bits de entrada e um de saída.
+    Para que o bit de saída tenha o valor um (verdadeiro), pelo menos um dos bits de entrada precisa ser verdadeiro.</p>
+
+
+  <h1 id="subtitulo">Tabela verdade</h1>
+  <p class="paragrafo">Tabela verdade é um dispositivo utilizado no estudo da lógica matemática. Com o uso desta tabela é possível definir o valor lógico de uma proposição, isto é, saber quando uma sentença é verdadeira ou falsa.
+
+      Em lógica, as proposições representam pensamentos completos e indicam afirmações de fatos ou ideias.
+      As preposições são representados por uma letra do alfabeto. Essas letras tem  afunção de receber uma afirmação.
+
+      Utiliza-se a tabela verdade em proposições compostas, ou seja, sentenças formadas por proposições simples, sendo que o resultado do valor lógico depende apenas do valor de cada proposição.
+
+      Para combinar proposições simples e formar proposições compostas são utilizados conectivos lógicos. Estes conectivos representam operações lógicas.
+      Uma preposição tem um principio de não contradição, isto é, não pode ser verdadeiro e falso ao mesmo tempo.
+
+      Na tabela abaixo, indicamos os principais conectivos, os símbolos usados para representá-los, a operação lógica que representam e o resultante valor lógico.</p>
+      <br><br>
+      <table>
+        <tr>
+          <th> Conectivo </th>
+          <th> Símbolo </th>
+          <th> Operação Lógica </th>
+          <th>Valor Lógico</th>
+
+        </tr>
+     
+
+         <tr>
+            <td><b> não </b></td>
+            <td><b> ~ </b></td>
+            <td><b> Negação </b></td>
+            <td><b>Inverterá o valor das proposições. Ex: V=F, F=V. </b></td>
+        </tr>
+      
+
+        <tr>
+            <td><b> e </b></td>
+            <td><b> ^ </b></td>
+            <td><b> Conjunção </b></td>
+            <td><b>Somente será verdadeiro se todas <br> as proposições forem verdadeiros.</b></td>
+        </tr>
+        
+
+        <tr>
+          <td><b> ou </b></td>
+          <td><b>  v  </b></td>
+          <td><b> Disjunção </b></td>
+          <td><b> Será verdadeira quando pelo menos uma <br> das proposições forem verdadeira.</b></td>
+        </tr>
+        
+        <tr>
+          <td><b>Se...então </b></td>
+          <td><b> --&gt;  </b></td>
+          <td><b> Condicional </b></td>
+          <td><b>Será falsa quando a proposição<br> antecedente for verdadeira e a <br>consequente for falsa.</b></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>...se somente se...</b></td>
+          <td><b> &lt;--&gt; </b></td>
+          <td><b> Bicondicional</b></td>
+          <td><b>Será verdadeira quando ambas<br> as proposições forem verdadeiras <br> ou ambas falsas.</b></td>
+
+        </tr>
+      </table>
+      <br>
+             <h3> Exemplo </h3>
+             <p class="paragrafo"> p: O sol está brilhando.<br> q: Está calor hoje. <br>
+              <i><u>Obs: p e q são preposições lógicas.</u></i> </p>
+             <h4 class="conectivo">Usando o conectivo "e" (^). </h4><br>
+             <p class="paragrafo"> p^q: O sol está brilhando <strong><u>e</u></strong> está calor hoje. <br>
+             <h4 class="conectivo">Usando o conectivo "não" (~).</h4> <br>
+             <p class="paragrafo">~p^~q: O sol <strong><u>não</u></strong> está brilhando <strong><u>e não</u></strong> está calor hoje. </p><br>
+             <h4 class="conectivo">Usando o conetivo "ou" (v).</h4><br>
+             <p class="paragrafo"> pvq: O sol está brilhando <strong><u>ou</u></strong> está calor hoje.</p><br>
+             <h4 class="conectivo">Usando o conectivo "se...então..." --&gt;)</h4><br>
+             <p class="paragrafo">p--&gt;q: <strong><u>Se</u></strong> o sol está brilhando, <strong><u>então</u></strong> está calor hoje.</p><br>
+             <h4 class="conectivo">Usando o conectivo "...se somente se..." (&lt;--&gt;)</h4><br>
+             <p class="paragrafo"> p&lt;--&gt;q: O sol está brilhando <strong><u>se somente se</u></strong> está calor hoje.</p><br><br>
+             <h3>Montando uma tabela da verdade. </h3>
+             <p class="paragrafo">Para montar uma tabela, são combinadas todas as posibilidades, isto é, combinar a posibilidade de uma preposição ter o valor lógico verdadeiro e valor lógico falso. A tabela tende a ter mais linhas quanto mais preposições. uma preposição é equivaltente á duas linhas da tabela, duas preposições, quatro linhas, três preposições, oito linhas, e assim sucessivamente. Portanto a cada preposição as linhas dobram.</p>
+
+             <h4>Uma Tabela com três preposições</h4>
+
+
+
+
+  <table>
+        <tr>
+
+          <th> p </th>
+          <th> q </th>
+          <th> r </th>
+          <th>~p </th>
+          <th> ~P^q </th>
+          <th> (~P^q)vr </th>
+          
+
+        </tr>
+        
+         <tr>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td> 
+          </tr>
+
+          <tr>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td> 
+          </tr>
+
+          <tr>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td> 
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+          </tr>
+            
+</table>
+<br><br>
+
+
+
+</div>
+
+<!--botão-->
+
+<button onclick="topFunction()" id="button" title="Volta ao topo">Topo</button>
+
+<script>
+//Quando o usuário rolar 60px para baixo, mostre o botão
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("button").style.display = "block";
+  } else {
+    document.getElementById("button").style.display = "none";
+  }
+}
+
+// Quando o usuário clica no botão, volta na parte superior da página
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+ <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <address>
+            Desenvolvido por: <a class="mailto" href="mailto:anelusbenlove@gmail.com">Benlove Anelus, </a> <a class="mailto" href="mailto:Lailarafasch@gmail.com">Gabriel João Rosa, </a>
+          <a class="mailto" href="mailto:darkninsa@gmail.com">Paulo Ismél, </a> <a class="mailto" href="mailto:guaitanelematheus@gmail.com">Matheus Guaitanele, </a>
+            <a class="mailto" href="mailto:cardosolucasaugust@gmail.com">Lucas Cardoso.</a> <br>
+           <a href="http://blumenau.ifc.edu.br"> IFC campus Blumenau</a><br>
+          <small>  &copy; 2019 101 Info. Todos os direitos reservados.</small>
+    </address>
+     </div>   
+  </footer>
+
+
+
+
+
+</body>
+</html>
